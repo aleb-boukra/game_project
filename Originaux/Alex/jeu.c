@@ -120,3 +120,22 @@ int ft_scene_5(char *correct, char *wrong, int points)
     }
     return (score);
 }
+
+void ft_ending(int n)
+{
+    if (n == 0)
+    {
+        printf("( Elle est tellement énervée par tes réponses qu'elle te balance son verre au visage et quitte immédiatement le restaurant. )\n");
+        printf("« Elle m'a balancé un verre et elle est partie... Je crois que j'ai complètement raté mon rendez-vous. »\n");
+    }
+    else if (n >= 1 && n <= 2)
+    {
+        printf("(Le rendez-vous se termine dans un silence gênant. Elle te remercie poliment, mais refuse de te revoir.)\n");
+        printf("« Bon... C'était sympa, mais je pense qu'on n'est pas vraiment faits l'un pour l'autre. Bonne soirée ! »\n");
+    }
+    else
+    {
+        printf("( Elle a apprécié le rendez-vous. Elle sourit et te propose de vous revoir. )\n");
+        printf("« J'ai passé une super soirée avec toi ! Ça te dirait qu'on se revoie ce week-end ? »\n");
+    }
+}
